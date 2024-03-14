@@ -15,12 +15,12 @@ from sklearn import preprocessing
 le = preprocessing.LabelEncoder()
 
 ulke[:,0] = le.fit_transform(datas.iloc[:,0])
-
+"""
 #oneHotEncoder her ülke için bir sütun oluşturdu kişinin ülkesine 1 diğerlerine 0 atadı
 ohe = preprocessing.OneHotEncoder()
 
 ulke = ohe.fit_transform(ulke).toarray()
-
+"""
 
 """
 LabelEncoder ve OneHotEncoder, kategorik verilerin makine öğrenimi algoritmalarına uygun hale getirilmesinde sıklıkla kullanılan araçlardır. 
